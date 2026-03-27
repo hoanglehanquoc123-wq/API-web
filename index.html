@@ -50,7 +50,7 @@
             <div class="mx-auto mb-6 float-animation">
                 <img 
                     id="home-avatar"
-                    src="skirk-genshin-impact-4k-wallpaper.jpg" 
+                    src="4k-cherry-blossom-pagoda-wallpaper.jpg" 
                     alt="Avatar Nguyễn Lê Hoàng" 
                     class="w-24 h-24 rounded-full border-4 border-amber-400 object-cover shadow-2xl mx-auto"
                 >
@@ -343,61 +343,302 @@
         <span>Cập nhật: <span id="yt-time-speed">Chưa có dữ liệu</span></span>
     </div>
 </div>
+
+
+<!-----------------------------------------------youtube Tzuyang------------------------------------>
+<div class="glass-card rounded-2xl p-6 card-hover animated-border">
+    <div class="flex justify-between mb-4">
+        <span class="text-red-500 font-bold flex items-center gap-2">
+            <i data-lucide="youtube" class="w-4 h-4"></i> YouTube Tzuyang
+        </span>
+        <span class="text-[10px] opacity-50 uppercase tracking-widest">Live Streamer</span>
+    </div>
+
+    <div class="space-y-4">
+        <div class="text-center pb-2 border-b border-white/5">
+            <span id="yt-channel-name-tzuyang" class="text-sm font-medium text-gray-300">Đang tải...</span>
+        </div>
+
+        <div class="flex justify-between items-center">
+            <span class="text-gray-400">Người đăng ký:</span>
+            <span id="yt-subs-tzuyang" class="text-xl font-bold text-emerald-400">--</span>
+        </div>
+
+        <div class="flex justify-between items-center">
+            <span class="text-gray-400">Tổng lượt xem:</span>
+            <span id="yt-views-tzuyang" class="text-xl font-bold text-sky-400">--</span>
+        </div>
+    </div>
+
+    <div class="mt-4 pt-4 border-t border-white/10 text-[10px] text-gray-400 flex items-center gap-1">
+        <i data-lucide="clock" class="w-3 h-3"></i> 
+        <span>Cập nhật: <span id="yt-time-tzuyang">Chưa có dữ liệu</span></span>
+    </div>
+</div>
     </div> 
 </section>
 
-<!----------------------------------------Trang tin tức------------------------------------->
+<!----------------------------------------------------------------Trang tin tức---------------------------------------------------------------->
                 <section id="page-news" class="page hidden">
     <h2 class="text-2xl font-bold mb-6 flex items-center gap-2">
         <i data-lucide="newspaper" class="text-amber-400"></i> Tin Tức 
     </h2>
     
-    <div id="news-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        <div id="news-loading" class="col-span-full text-center py-10 opacity-50">
-            Đang tải tin tức mới nhất...
-        </div>
-    </div>
+   <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 
-    <template id="news-item-template">
-    <div class="glass-card rounded-2xl p-6 card-hover flex flex-col h-full">
+
+    <!--------------------------------------------Tin tức Tecnología------------------------------------------>
+    <div class="glass-card rounded-2xl p-6 card-hover flex flex-col h-full border border-white/10" style="background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(10px);">
         <div class="flex justify-between mb-4 items-start">
-            <span class="news-category text-amber-400 font-bold text-sm">Tin tức</span>
-            <div class="w-8 h-8 bg-white/5 rounded-lg flex items-center justify-center">
-                <i data-lucide="newspaper" class="w-4 h-4 text-amber-400/50"></i>
+            <span class="text-amber-400 font-bold text-xs uppercase tracking-widest">Tecnología</span>
+            <div class="w-8 h-8 bg-white/5 rounded-lg flex items-center justify-center border border-white/10">
+                <i data-lucide="truck" class="w-4 h-4 text-amber-400"></i>
             </div>
         </div>
-
-        <div class="space-y-4 flex-1">
-            <div class="flex flex-col">
-                <span class="text-[10px] opacity-50 uppercase mb-1">Tiêu đề tin tức</span>
-                <h3 class="news-title text-lg font-bold leading-tight line-clamp-3 text-white">
-                    ---
-                </h3>
-            </div>
-
-            <div class="space-y-2 border-t border-white/10 pt-4">
-                <div class="flex justify-between items-center text-sm">
-                    <span class="opacity-60 flex items-center gap-2">
-                        <i data-lucide="globe" class="w-3 h-3"></i> Nguồn:
-                    </span>
-                    <span class="news-source font-medium text-amber-100">---</span>
-                </div>
-                <div class="flex justify-between items-center text-sm">
-                    <span class="opacity-60 flex items-center gap-2">
-                        <i data-lucide="calendar" class="w-3 h-3"></i> Ngày đăng:
-                    </span>
-                    <span class="news-date font-medium text-amber-100">---</span>
-                </div>
-            </div>
+        <div class="relative w-full h-48 mb-4 overflow-hidden rounded-xl">
+            <img src="2.webp" 
+         class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
         </div>
-
-        <div class="mt-4 pt-4 border-t border-white/10">
-            <a href="#" target="_blank" class="news-link w-full bg-white/5 hover:bg-amber-400 hover:text-gray-900 py-2 rounded-xl text-xs font-bold transition-all flex items-center justify-center gap-2">
-                Đọc bài viết <i data-lucide="external-link" class="w-3 h-3"></i>
-            </a>
+        <div class="flex-1 flex flex-col">
+            <h3 class="text-lg font-bold leading-tight text-white line-clamp-2 min-h-[3.5rem]">Tesla Semi Finally Hits the Road – And Truckers Are Actually Impressed</h3>
+            <p class="text-sm text-gray-400 line-clamp-3 mt-2">Tesla Semi enters mass production in 2026 with 500-mile range, impressing truckers with its highway performance.</p>
+            
+            <div class="mt-auto"> <div class="mt-4 pt-4 border-t border-white/10 flex justify-between items-center text-[11px] text-amber-100/60 uppercase font-medium">
+                    <span>Linksdv.com</span>
+                    <span>Mar 27, 2026</span>
+                </div>
+                <a href="https://www.linksdv.com/25085" target="_blank" class="mt-4 w-full bg-amber-400/10 hover:bg-amber-400 hover:text-gray-900 py-2.5 rounded-xl text-xs font-bold transition-all flex items-center justify-center gap-2">
+                    Đọc bài viết <i data-lucide="external-link" class="w-3 h-3"></i>
+                </a>
+            </div>
         </div>
     </div>
-</template>
+
+
+    <!--------------------------------------------Tin tức Hardware------------------------------------------>
+    <div class="glass-card rounded-2xl p-6 card-hover flex flex-col h-full border border-white/10" style="background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(10px);">
+        <div class="flex justify-between mb-4 items-start">
+            <span class="text-amber-400 font-bold text-xs uppercase tracking-widest">Hardware</span>
+            <div class="w-8 h-8 bg-white/5 rounded-lg flex items-center justify-center border border-white/10">
+                <i data-lucide="cpu" class="w-4 h-4 text-amber-400"></i>
+            </div>
+        </div>
+        <div class="relative w-full h-48 mb-4 overflow-hidden rounded-xl">
+        <img src="https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/24748324/236706_Mac_Pro_AKrales_0016.jpg" 
+         class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
+        </div>
+        <div class="flex-1 flex flex-col">
+            <h3 class="text-lg font-bold leading-tight text-white line-clamp-2 min-h-[3.5rem]">Apple’s Mac Pro is dead, apparently for good this time</h3>
+            <p class="text-sm text-gray-400 line-clamp-3 mt-2">The "cheese grater" workstation has been discontinued after 20 years, marking the end of the line.</p>
+            <div class="mt-auto">
+                <div class="mt-4 pt-4 border-t border-white/10 flex justify-between items-center text-[11px] text-amber-100/60 uppercase font-medium">
+                    <span>The Verge</span>
+                    <span>Mar 26, 2026</span>
+                </div>
+                <a href="https://www.theverge.com/tech/902050/mac-pro-discontinued" target="_blank" class="mt-4 w-full bg-amber-400/10 hover:bg-amber-400 hover:text-gray-900 py-2.5 rounded-xl text-xs font-bold transition-all flex items-center justify-center gap-2">
+                    Đọc bài viết <i data-lucide="external-link" class="w-3 h-3"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+    <!--------------------------------------------Tin tức Wearables------------------------------------------>
+    <div class="glass-card rounded-2xl p-6 card-hover flex flex-col h-full border border-white/10" style="background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(10px);">
+        <div class="flex justify-between mb-4 items-start">
+            <span class="text-amber-400 font-bold text-xs uppercase tracking-widest">Wearables</span>
+            <div class="w-8 h-8 bg-white/5 rounded-lg flex items-center justify-center border border-white/10">
+                <i data-lucide="watch" class="w-4 h-4 text-amber-400"></i>
+            </div>
+        </div>
+        <div class="relative w-full h-48 mb-4 overflow-hidden rounded-xl">
+            <img src="https://platform.theverge.com/wp-content/uploads/sites/2/2025/10/226269_FITBIT_INSPIRE_3_PHO_vsong_0004.webp?quality=90&w=1200" 
+            class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
+        </div>
+        <div class="flex-1 flex flex-col">
+            <h3 class="text-lg font-bold leading-tight text-white line-clamp-2 min-h-[3.5rem]">Fitbit’s budget-friendly Inspire 3 is $30 off</h3>
+            <p class="text-sm text-gray-400 line-clamp-3 mt-2">Amazon’s Big Spring Sale delivers discounts on wearables. The Fitbit Inspire 3 returns to its all-time low.</p>
+            <div class="mt-auto">
+                <div class="mt-4 pt-4 border-t border-white/10 flex justify-between items-center text-[11px] text-amber-100/60 uppercase font-medium">
+                    <span>The Verge</span>
+                    <span>Mar 26, 2026</span>
+                </div>
+                <a href="https://www.theverge.com/tech/901765/fitbit-inspire-3-amazon-big-spring-sale-2026-deal" target="_blank" class="mt-4 w-full bg-amber-400/10 hover:bg-amber-400 hover:text-gray-900 py-2.5 rounded-xl text-xs font-bold transition-all flex items-center justify-center gap-2">
+                    Xem ưu đãi <i data-lucide="external-link" class="w-3 h-3"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+    <!--------------------------------------------Tin tức Antitrust------------------------------------------>
+    <div class="glass-card rounded-2xl p-6 card-hover flex flex-col h-full border border-white/10" style="background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(10px);">
+        <div class="flex justify-between mb-4 items-start">
+            <span class="text-amber-400 font-bold text-xs uppercase tracking-widest">Antitrust</span>
+            <div class="w-8 h-8 bg-white/5 rounded-lg flex items-center justify-center border border-white/10">
+                <i data-lucide="gavel" class="w-4 h-4 text-amber-400"></i>
+            </div>
+        </div>
+        <div class="relative w-full h-48 mb-4 overflow-hidden rounded-xl">
+            <img src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/03/DCD_0326_Livenation.jpg?quality=90&w=1200" 
+            class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
+        </div>
+        <div class="flex-1 flex flex-col">
+            <h3 class="text-lg font-bold leading-tight text-white line-clamp-2 min-h-[3.5rem]">Everyone hates Ticketmaster. Why’d Trump go easy on them?</h3>
+            <p class="text-sm text-gray-400 line-clamp-3 mt-2">Talking about the major antitrust lawsuit against Live Nation and what the settlement means for competition.</p>
+            <div class="mt-auto">
+                <div class="mt-4 pt-4 border-t border-white/10 flex justify-between items-center text-[11px] text-amber-100/60 uppercase font-medium">
+                    <span>The Verge</span>
+                    <span>Mar 26, 2026</span>
+                </div>
+                <a href="https://www.theverge.com/podcast/900540/live-nation-ticketmaster-lawsuit-antitrust-trump-doj-settlement" target="_blank" class="mt-4 w-full bg-amber-400/10 hover:bg-amber-400 hover:text-gray-900 py-2.5 rounded-xl text-xs font-bold transition-all flex items-center justify-center gap-2">
+                    Nghe Podcast <i data-lucide="external-link" class="w-3 h-3"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+    <!--------------------------------------------Tin tức AI / Siri------------------------------------------>
+    <div class="glass-card rounded-2xl p-6 card-hover flex flex-col h-full border border-white/10" style="background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(10px);">
+        <div class="flex justify-between mb-4 items-start">
+            <span class="text-amber-400 font-bold text-xs uppercase tracking-widest">AI / Siri</span>
+            <div class="w-8 h-8 bg-white/5 rounded-lg flex items-center justify-center border border-white/10">
+                <i data-lucide="bot" class="w-4 h-4 text-amber-400"></i>
+            </div>
+        </div>
+        <div class="relative w-full h-48 mb-4 overflow-hidden rounded-xl">
+            <img src="3.webp" 
+            class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
+        </div>
+        <div class="flex-1 flex flex-col">
+            <h3 class="text-lg font-bold leading-tight text-white line-clamp-2 min-h-[3.5rem]">Apple’s Siri Isn’t Just Going to Use One Chatbot. It’s Using All</h3>
+            <p class="text-sm text-gray-400 line-clamp-3 mt-2">Apple has decided to forgo an exclusive deal with OpenAI to allow Siri to run queries through many providers.</p>
+            <div class="mt-auto">
+                <div class="mt-4 pt-4 border-t border-white/10 flex justify-between items-center text-[11px] text-amber-100/60 uppercase font-medium">
+                    <span>Gizmodo.com</span>
+                    <span>Mar 26, 2026</span>
+                </div>
+                <a href="https://gizmodo.com/apples-siri-isnt-just-going-to-use-one-chatbot-its-going-to-use-all-of-them-2000738742" target="_blank" class="mt-4 w-full bg-amber-400/10 hover:bg-amber-400 hover:text-gray-900 py-2.5 rounded-xl text-xs font-bold transition-all flex items-center justify-center gap-2">
+                    Chi tiết <i data-lucide="external-link" class="w-3 h-3"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+        <!--------------------------------------------Tin tức Privacy------------------------------------------>
+    <div class="glass-card rounded-2xl p-6 card-hover flex flex-col h-full border border-white/10" style="background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(10px);">
+        <div class="flex justify-between mb-4 items-start">
+            <span class="text-amber-400 font-bold text-xs uppercase tracking-widest">Privacy</span>
+            <div class="w-8 h-8 bg-white/5 rounded-lg flex items-center justify-center border border-white/10">
+                <i data-lucide="shield-check" class="w-4 h-4 text-amber-400"></i>
+            </div>
+        </div>
+        <div class="relative w-full h-48 mb-4 overflow-hidden rounded-xl">
+            <img src="4.webp" 
+            class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
+        </div>
+        <div class="flex-1 flex flex-col">
+            <h3 class="text-lg font-bold leading-tight text-white line-clamp-2 min-h-[3.5rem]">Apple Requires Device-Level Age Verification in the UK Now</h3>
+            <p class="text-sm text-gray-400 line-clamp-3 mt-2">Users under 18 will face restrictions and anti-nudity text monitoring as Apple rolls out update.</p>
+            <div class="mt-auto">
+                <div class="mt-4 pt-4 border-t border-white/10 flex justify-between items-center text-[11px] text-amber-100/60 uppercase font-medium">
+                    <span>Gizmodo.com</span>
+                    <span>Mar 26, 2026</span>
+                </div>
+                <a href="https://gizmodo.com/apple-requires-device-level-age-verification-in-the-uk-now-could-the-us-be-next-2000738481" target="_blank" class="mt-4 w-full bg-amber-400/10 hover:bg-amber-400 hover:text-gray-900 py-2.5 rounded-xl text-xs font-bold transition-all flex items-center justify-center gap-2">
+                    Đọc tiếp <i data-lucide="external-link" class="w-3 h-3"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+    <!--------------------------------------------Tin tức Entertainment------------------------------------------>
+    <div class="glass-card rounded-2xl p-6 card-hover flex flex-col h-full border border-white/10" style="background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(10px);">
+        <div class="flex justify-between mb-4 items-start">
+            <span class="text-amber-400 font-bold text-xs uppercase tracking-widest">Entertainment</span>
+            <div class="w-8 h-8 bg-white/5 rounded-lg flex items-center justify-center border border-white/10">
+                <i data-lucide="tv" class="w-4 h-4 text-amber-400"></i>
+            </div>
+        </div>
+        <div class="relative w-full h-48 mb-4 overflow-hidden rounded-xl">
+            <img src="5.jpg" 
+            class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
+        </div>
+        <div class="flex-1 flex flex-col">
+            <h3 class="text-lg font-bold leading-tight text-white line-clamp-2 min-h-[3.5rem]">Why ‘For All Mankind’ Season 5 Is the Key to the Series</h3>
+            <p class="text-sm text-gray-400 line-clamp-3 mt-2">io9 spoke to showrunners about the pivotal new season and the future of the Apple TV+ space drama.</p>
+            <div class="mt-auto">
+                <div class="mt-4 pt-4 border-t border-white/10 flex justify-between items-center text-[11px] text-amber-100/60 uppercase font-medium">
+                    <span>Gizmodo.com</span>
+                    <span>Mar 26, 2026</span>
+                </div>
+                <a href="https://gizmodo.com/why-for-all-mankind-season-5-is-the-key-to-the-rest-of-the-series-2000738151" target="_blank" class="mt-4 w-full bg-amber-400/10 hover:bg-amber-400 hover:text-gray-900 py-2.5 rounded-xl text-xs font-bold transition-all flex items-center justify-center gap-2">
+                    Xem thêm <i data-lucide="external-link" class="w-3 h-3"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+    <!--------------------------------------------Tin tức Policy / AI------------------------------------------>
+    <div class="glass-card rounded-2xl p-6 card-hover flex flex-col h-full border border-white/10" style="background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(10px);">
+        <div class="flex justify-between mb-4 items-start">
+            <span class="text-amber-400 font-bold text-xs uppercase tracking-widest">Policy / AI</span>
+            <div class="w-8 h-8 bg-white/5 rounded-lg flex items-center justify-center border border-white/10">
+                <i data-lucide="user-cog" class="w-4 h-4 text-amber-400"></i>
+            </div>
+        </div>
+        <div class="relative w-full h-48 mb-4 overflow-hidden rounded-xl">
+            <img src="https://platform.theverge.com/wp-content/uploads/sites/2/2025/03/STKP213_DAVID_SACKS_A.jpg?quality=90&w=1200" 
+            class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
+        </div>
+        <div class="flex-1 flex flex-col">
+            <h3 class="text-lg font-bold leading-tight text-white line-clamp-2 min-h-[3.5rem]">David Sacks is no longer the White House AI and Crypto Czar</h3>
+            <p class="text-sm text-gray-400 line-clamp-3 mt-2">Venture capitalist David Sacks moves to a presidential advisory council after finishing his time as a special employee.</p>
+            <div class="mt-auto">
+                <div class="mt-4 pt-4 border-t border-white/10 flex justify-between items-center text-[11px] text-amber-100/60 uppercase font-medium">
+                    <span>The Verge</span>
+                    <span>Mar 26, 2026</span>
+                </div>
+                <a href="https://www.theverge.com/policy/902140/david-sacks-out-ai-crypto-czar" target="_blank" class="mt-4 w-full bg-amber-400/10 hover:bg-amber-400 hover:text-gray-900 py-2.5 rounded-xl text-xs font-bold transition-all flex items-center justify-center gap-2">
+                    Đọc chi tiết <i data-lucide="external-link" class="w-3 h-3"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+        <!--------------------------------------------Tin tức Automotive------------------------------------------>
+    <div class="glass-card rounded-2xl p-6 card-hover flex flex-col h-full border border-white/10" style="background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(10px);">
+        <div class="flex justify-between mb-4 items-start">
+            <span class="text-amber-400 font-bold text-xs uppercase tracking-widest">Automotive</span>
+            <div class="w-8 h-8 bg-white/5 rounded-lg flex items-center justify-center border border-white/10">
+                <i data-lucide="car" class="w-4 h-4 text-amber-400"></i>
+            </div>
+        </div>
+        <div class="relative w-full h-48 mb-4 overflow-hidden rounded-xl">
+            <img src="https://image.cnbcfm.com/api/v1/image/108283770-1774563328313-preview-928x522.jpg?v=1774563476&w=1920" 
+            class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
+        </div>
+        <div class="flex-1 flex flex-col">
+            <h3 class="text-lg font-bold leading-tight text-white line-clamp-2 min-h-[3.5rem]">Infiniti hopes new QX65 SUV can turn around fortunes in the U.S.</h3>
+            <p class="text-sm text-gray-400 line-clamp-3 mt-2">Infiniti unveils the luxury midsize QX65 with a 268-horsepower engine, aiming for a comeback in the American market.</p>
+            <div class="mt-auto">
+                <div class="mt-4 pt-4 border-t border-white/10 flex justify-between items-center text-[11px] text-amber-100/60 uppercase font-medium">
+                    <span>CNBC</span>
+                    <span>Mar 26, 2026</span>
+                </div>
+                <a href="https://www.cnbc.com/2026/03/26/inifiniti-qx65-suv-nissan.html" target="_blank" class="mt-4 w-full bg-amber-400/10 hover:bg-amber-400 hover:text-gray-900 py-2.5 rounded-xl text-xs font-bold transition-all flex items-center justify-center gap-2">
+                    Xem mẫu xe <i data-lucide="external-link" class="w-3 h-3"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
 </section>
 
 
@@ -477,7 +718,18 @@
         </div>
 
 
+        <!----------------------------------------Thời tiết Thượng Hải ------------------------------>
 
+        <div class="glass-card rounded-2xl p-6 card-hover">
+            <div class="flex justify-between mb-4"><span class="font-medium">Thượng Hải</span><i data-lucide="map-pin" class="w-4 h-4 opacity-50"></i></div>
+            <div class="flex items-center gap-4 mb-4">
+                <div class="text-4xl font-bold" id="sh-temp">--°C</div>
+                <div class="text-sm opacity-80" id="sh-desc">Đang tải...</div>
+            </div>
+            <div class="border-t border-white/10 pt-3 mt-2 flex items-center gap-2 opacity-60 text-[10px] uppercase tracking-wider">
+                <i data-lucide="clock" class="w-3 h-3"></i> <span>Cập nhật: <span id="sh-time">--:--:--</span></span>
+            </div>
+        </div>
     </div> 
 </section>
         </div>

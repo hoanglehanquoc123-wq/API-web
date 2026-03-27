@@ -157,6 +157,7 @@ function loadAllData() {
     fetchBeijing();
     fetchSeoul();
     fetchSingapore();
+    fetchShanghai();
     fetchAllNews();
 }
 
@@ -372,6 +373,42 @@ fetchYouTubeDudePerfect();
 
 
 
+/*---------------------------Tzuyang------------------------------------*/
+async function fetchYouTubeTzuyang() {
+    const API_KEY = 'AIzaSyBRU5vEv3mAgCCrnPhbU6zLOH6glNNNQWs'; // Dán Key của bạn
+    const CHANNEL_ID = 'UCfpaSruWW3S4dibonKXENjA'; // Dán ID kênh
+    
+    try {
+        const url = `https://www.googleapis.com/youtube/v3/channels?part=statistics,snippet&id=${CHANNEL_ID}&key=${API_KEY}`;
+        const res = await fetch(url);
+        const data = await res.json();
+
+        if (data.items && data.items.length > 0) {
+            const stats = data.items[0].statistics;
+            const snippet = data.items[0].snippet;
+            const now = new Date().toLocaleTimeString('vi-VN');
+
+            // Đổ dữ liệu
+            document.getElementById('yt-channel-name-tzuyang').innerText = snippet.title;
+            
+            // Dùng toLocaleString để có dấu phẩy ngăn cách hàng nghìn
+            document.getElementById('yt-subs-tzuyang').innerText = Number(stats.subscriberCount).toLocaleString('en-US');
+            document.getElementById('yt-views-tzuyang').innerText = Number(stats.viewCount).toLocaleString('en-US');
+            
+            document.getElementById('yt-time-tzuyang').innerText = now;
+
+            // Render lại icon Lucide
+            if (window.lucide) lucide.createIcons();
+        }
+    } catch (err) {
+        console.error("Lỗi:", err);
+        document.getElementById('yt-channel-name-tzuyang').innerText = "Lỗi kết nối API";
+    }
+}
+
+// Chạy ngay khi mở trang
+fetchYouTubeTzuyang();
+
 
 
 /*---------------------------Thời tiết------------------------------------*/
@@ -520,9 +557,39 @@ async function fetchSingapore() {
 
 
 
+/*---------------------------Thượng Hải------------------------------------*/
+async function fetchShanghai() {
+    const API_KEY = '3bc8c49d8686de0f7a767115fd965ce1';
+    try {
+        const res = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=Shanghai&appid=${API_KEY}&units=metric&lang=vi`);
+        const data = await res.json();
+        
+        // 1. Cập nhật các thông số thời tiết
+        updateUI('sh-temp', `${Math.round(data.main.temp)}°C`);
+        updateUI('sh-desc', data.weather[0].description);
+        if (document.getElementById('sh-humidity')) {
+            updateUI('sh-humidity', `${data.main.humidity}%`);
+        }
+
+        // 2. Lấy thời gian hiện tại và định dạng (HH:mm)
+        const now = new Date();
+        const hours = String(now.getHours()).padStart(2, '0');
+        const minutes = String(now.getMinutes()).padStart(2, '0');
+        const seconds = String(now.getSeconds()).padStart(2, '0');
+        const timeString = `${hours}:${minutes}:${seconds}`;
+
+        // 3. Đổ thời gian vào giao diện (ID 'sh-time' mà mình đã thêm ở file HTML trước đó)
+        updateUI('sh-time', timeString);
+
+    } catch (err) {
+        console.warn("Weather API lỗi hoặc cần API Key hợp lệ:", err);
+    }
+}
 
 
-/*---------------------------Tin tức------------------------------------*/
+
+
+/*---------------------------Tin tức (ko cần cái này cũng đc đã có hard core ) ------------------------------------*/
 async function fetchAllNews() {
     const NEWS_API_KEY = '4967ba93ef9449a5a6f7c87a732a9328';
     
